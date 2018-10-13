@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <com.hanks.htextview.scale.ScaleTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50sp"
+            android:id="@+id/tv_text_1"
+            android:text="Please wait"
+            android:textSize="16sp"/>
+
+        <com.hanks.htextview.scale.ScaleTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:id="@+id/tv_text_2"
+            android:textSize="16sp"/>
+
+        <com.hanks.htextview.scale.ScaleTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:id="@+id/tv_text_3"
+            android:textSize="16sp"/>
+
+        <com.hanks.htextview.scale.ScaleTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center"
+            android:id="@+id/tv_text_4"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_floating_widget"
+        android:src="@drawable/widget_icon"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_run"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/runsmall"
+        android:scaleType="fitCenter"
+        />
+
+
+
+
+
+
+</RelativeLayout>

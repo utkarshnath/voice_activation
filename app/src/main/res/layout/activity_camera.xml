@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_margin="15sp"
+        android:src="@drawable/iconcam"
+        android:id="@+id/ib_start_capture"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:src="@drawable/camchangeicon"
+        android:id="@+id/ib_change_camera"/>
+
+
+
+</RelativeLayout>

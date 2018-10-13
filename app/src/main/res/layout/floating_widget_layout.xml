@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--   Root container of Floating Widget View  -->
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--  View while view is collapsed  -->
+
+        <RelativeLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--   ImageView of floating widget  -->
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/collapsed_iv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_themed"
+                android:elevation="10dp"
+                android:src="@drawable/widget_start_icon"
+                tools:ignore="ContentDescription"
+                tools:targetApi="lollipop" />
+
+            <!--   Close button to close Floating Widget View  -->
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/close_floating_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_shape"
+                android:elevation="15dp"
+                app:srcCompat="@drawable/ic_close_white"
+                tools:ignore="ContentDescription"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <!--   View while view is expanded   -->
+        <RelativeLayout
+            android:id="@+id/expanded_container"
+            android:layout_width="330dp"
+            android:layout_height="250dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50sp"
+            android:background="#CCFFFFFF"
+            android:alpha="0.8"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.hanks.htextview.scale.ScaleTextView
+                    android:id="@+id/tv_text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50sp"
+                    android:gravity="center"
+                    android:text="You may speak now"
+                    android:textSize="16sp" />
+
+                <com.hanks.htextview.scale.ScaleTextView
+                    android:id="@+id/tv_text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <com.hanks.htextview.scale.ScaleTextView
+                    android:id="@+id/tv_text_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <com.hanks.htextview.scale.ScaleTextView
+                    android:id="@+id/tv_text_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/round_themed"
+                android:elevation="10dp"
+                android:layout_margin="16dp"
+                app:srcCompat="@drawable/ic_close"
+                tools:targetApi="lollipop" />
+
+
+            <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+                <!--android:id="@+id/fab_run"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_margin="16dp"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/runsmall" />-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
