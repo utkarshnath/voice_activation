@@ -20,7 +20,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.github.clans.fab.FloatingActionButton;
 import com.hanks.htextview.scale.ScaleTextView;
 
 import java.util.ArrayList;
@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     ScaleTextView stvText1, stvText2, stvText3, stvText4;
     final int OVERLAY_REQUEST_CODE = 1222;
+//    FloatingActionButton fabRun, fabStartWidget;
+
+
     FloatingActionButton fabRun, fabStartWidget;
 
     final int WRITE_EXTERNAL = 1234;
@@ -219,7 +222,6 @@ public class MainActivity extends AppCompatActivity {
 
         return false;
     }
-
 
 
     private void setTextOnTextViews(String receivedText) {

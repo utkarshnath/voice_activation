@@ -49,20 +49,7 @@
 
     </LinearLayout>
 
-
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fab_floating_widget"
-        android:src="@drawable/widget_icon"
-        android:layout_margin="16dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        />
-
-
-
-    <com.getbase.floatingactionbutton.FloatingActionButton
+    <com.github.clans.fab.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fab_run"
@@ -70,10 +57,17 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:src="@drawable/runsmall"
-        android:scaleType="fitCenter"
-        />
+        android:scaleType="fitCenter"/>
 
-
+    <com.github.clans.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_floating_widget"
+        android:src="@drawable/add_widget_icon"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"/>
 
 
 

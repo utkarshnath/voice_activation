@@ -21,8 +21,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-
-import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.hanks.htextview.scale.ScaleTextView;
 
 import java.util.ArrayList;
@@ -41,7 +39,6 @@ public class FloatingWidgetVoiceService extends Service implements View.OnClickL
 
     //Views
     ScaleTextView stvText1, stvText2, stvText3, stvText4;
-//    FloatingActionButton fabRun;
 
     //Camera control
     public static Boolean isCameraOn = false;
@@ -95,10 +92,6 @@ public class FloatingWidgetVoiceService extends Service implements View.OnClickL
             case R.id.collapse_view:
                 updateExpandedView(true);
                 break;
-
-//            case R.id.fab_run:
-//                startService(new Intent(FloatingWidgetVoiceService.this, MyRunningService.class));
-//                break;
 
         }
     }
