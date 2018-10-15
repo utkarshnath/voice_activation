@@ -21,29 +21,30 @@
             android:visibility="gone">
 
             <!--   ImageView of floating widget  -->
+
             <android.support.v7.widget.AppCompatImageButton
                 android:id="@+id/collapsed_iv"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/round_themed"
                 android:elevation="10dp"
+                android:background="@drawable/round_themed"
                 android:src="@drawable/widget_start_icon"
                 tools:ignore="ContentDescription"
-                tools:targetApi="lollipop" />
+                />
 
             <!--   Close button to close Floating Widget View  -->
             <android.support.v7.widget.AppCompatImageView
                 android:id="@+id/close_floating_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/circle_shape"
                 android:elevation="15dp"
+                android:background="@drawable/circle_shape"
                 app:srcCompat="@drawable/ic_close_white"
                 tools:ignore="ContentDescription"
-                tools:targetApi="lollipop" />
+                />
         </RelativeLayout>
 
         <!--   View while view is expanded   -->
@@ -113,16 +114,6 @@
                 app:srcCompat="@drawable/ic_close"
                 tools:targetApi="lollipop" />
 
-
-            <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
-                <!--android:id="@+id/fab_run"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_alignParentBottom="true"-->
-                <!--android:layout_alignParentEnd="true"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:scaleType="fitCenter"-->
-                <!--android:src="@drawable/runsmall" />-->
 
         </RelativeLayout>
     </RelativeLayout>
